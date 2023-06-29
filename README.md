@@ -3,17 +3,17 @@
 
 ## 情感分析实战：
 
-a) [数据获取篇](https://blog.csdn.net/zyh960/article/details/131083616?spm=1001.2014.3001.5501)
+a) [数据获取篇](https://blog.csdn.net/zyh960/article/details/131172565?spm=1001.2014.3001.5501)
 
-b) [数据预处理篇-情感分类篇(中文版)](https://blog.csdn.net/zyh960/article/details/131083683?spm=1001.2014.3001.5501)
+b) [数据预处理篇-情感分类篇(中文版)](https://blog.csdn.net/zyh960/article/details/131172656?spm=1001.2014.3001.5501)
 
-c) [数据预处理篇-情感分类篇(英文版)](https://blog.csdn.net/zyh960/article/details/131171641?spm=1001.2014.3001.5502)
+c) [数据预处理篇-情感分类篇(英文版)](https://blog.csdn.net/zyh960/article/details/131172163?spm=1001.2014.3001.5501)
 
-d) [无监督学习机器学习聚类篇](https://blog.csdn.net/zyh960/article/details/131090242?spm=1001.2014.3001.5501)
+d) [无监督学习机器学习聚类篇](https://blog.csdn.net/zyh960/article/details/131172511?spm=1001.2014.3001.5501)
 
-e) [LDA主题分析篇](https://blog.csdn.net/zyh960/article/details/131092799?spm=1001.2014.3001.5501)
+e) [LDA主题分析篇](https://blog.csdn.net/zyh960/article/details/131172253?spm=1001.2014.3001.5501)
 
-f) [共现语义网络](https://blog.csdn.net/zyh960/article/details/131095544?spm=1001.2014.3001.5502)
+f) [共现语义网络](https://blog.csdn.net/zyh960/article/details/131172433?spm=1001.2014.3001.5501)
 
 ------
 
