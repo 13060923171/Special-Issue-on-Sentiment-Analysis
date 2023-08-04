@@ -71,11 +71,11 @@ def handle_emojis(tweet):
 
 def clean_text(text):
     # Replaces URLs with the word URL
-    text = re.sub(r'((www\.[\S]+)|(https?://[\S]+))', ' URL ', text)
+    text = re.sub(r'((www\.[\S]+)|(https?://[\S]+))', ' ', text)
     # Replace @username with the word USER_MENTION
-    text = re.sub(r'@[\S]+', ' __USER_MENTION__ ', text)
+    text = re.sub(r'@[\S]+', ' ', text)
     # Replace #hashtag with the word HASHTAG
-    text = re.sub(r'#(\S+)', ' __HASHTAG__ ', text)
+    text = re.sub(r'#(\S+)', ' ', text)
     # Remove RT (retweet)
     text = re.sub(r'\brt\b', ' ', text)
     # Replace 2+ dots with space
