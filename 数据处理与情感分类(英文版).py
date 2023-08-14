@@ -71,7 +71,8 @@ def handle_emojis(tweet):
 
 def clean_text(text):
     # Replaces URLs with the word URL
-    text = re.sub(r'((www\.[\S]+)|(https?://[\S]+))', ' ', text)
+    url_pattern = re.compile(r'(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+')
+    text = url_pattern.sub('', text)
     # Replace @username with the word USER_MENTION
     text = re.sub(r'@[\S]+', ' ', text)
     # Replace #hashtag with the word HASHTAG
