@@ -40,19 +40,22 @@ def yasuo(st):
 
 
 def get_cut_words(content_series):
-    # 对文本进行分词和词性标注
-    words = pseg.cut(content_series)
-    # 保存名词和形容词的列表
-    nouns_and_adjs = []
-    # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
-    for word, flag in words:
-        if flag.startswith('n') or flag.startswith('a'):
-            if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
-                # 如果是名词或形容词，就将其保存到列表中
-                nouns_and_adjs.append(word)
-    if len(nouns_and_adjs) != 0:
-        return ' '.join(nouns_and_adjs)
-    else:
+    try:
+        # 对文本进行分词和词性标注
+        words = pseg.cut(content_series)
+        # 保存名词和形容词的列表
+        nouns_and_adjs = []
+        # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
+        for word, flag in words:
+            if flag.startswith('n') or flag.startswith('a'):
+                if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
+                    # 如果是名词或形容词，就将其保存到列表中
+                    nouns_and_adjs.append(word)
+        if len(nouns_and_adjs) != 0:
+            return ' '.join(nouns_and_adjs)
+        else:
+            return np.NAN
+    except:
         return np.NAN
 
 
